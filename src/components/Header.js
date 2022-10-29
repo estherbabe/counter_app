@@ -6,25 +6,19 @@ export default function Header() {
       <div className="top-header">
         <div className="left-side">
           <span className="avatar">TF</span>
-          <span>The Fashion Store</span>
-          <span>
-            <img src="images/star.png" alt="" /> 0(0)
+          <span className="header-title">The Fashion Store</span>
+          <span className="rating">
+            <img className="star" src="images/star.png" alt="" /> 0(0)
           </span>
         </div>
 
         <div className="right-side">
           <p>welcome to my store</p>
           <span></span>
-          <span>
-            <img src="images/cart.png" alt="" />
+          <span className="cart-span">
+            <img className="cart" src="images/cart.png" alt="" />
+            Cart
           </span>
-        </div>
-      </div>
-
-      <div className="bottom-header">
-        <div className="input-wrap">
-          <img src="images/search.png" alt="" />
-          <input type="text" name="" id="" />
         </div>
       </div>
     </div>

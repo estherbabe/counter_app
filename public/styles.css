@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600;700&family=League+Spartan:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  background-color: #dce3fb;
+}
+
+.header {
+  margin: 30px 50px;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  background-color: #8a88af;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #262626;
+  cursor: pointer;
+}
+
+.header-title {
+  font-size: 21px;
+  color: #333333;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #925e07;
+  font-weight: bold;
+}
+.star {
+  width: 20px;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.right-side p {
+  text-transform: uppercase;
+  color: #333333;
+  font-size: 15px;
+  font-family: "Cormorant" sans-serif;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+.cart-span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333333;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.cart {
+  width: 30px;
+}

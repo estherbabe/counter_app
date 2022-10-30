@@ -1,4 +1,5 @@
 import React from "react";
+import Item from "./Item";
 
 export default function StoreItems() {
   return (
@@ -13,6 +14,10 @@ export default function StoreItems() {
             placeholder="what are you shopping for?"
           />
         </div>
+      </div>
+
+      <div className="">
+        <Item />
       </div>
     </div>
   );

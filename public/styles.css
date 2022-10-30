@@ -111,3 +111,77 @@ input {
 .search {
   width: 1.5em;
 }
+
+.item-wrap {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding: 20px 0px;
+}
+
+.item-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.item-wrap-right {
+  padding: 20px;
+  align-items: center;
+}
+
+.item-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Cormorant" sans-serif;
+  margin-bottom: 7px;
+  color: #333333;
+}
+
+.item-wrap-right p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #2c1c6b;
+  margin-bottom: 16px;
+}
+.item-price {
+  color: #262626;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  border: 1px solid #333333;
+  color: #333333;
+  background-color: #dce3fb;
+}
+
+.count {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+.reset {
+  width: 1.7em;
+}
+
+hr {
+  width: 50%;
+  color: #262626;
+}

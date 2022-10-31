@@ -1,6 +1,9 @@
 import React from "react";
+import useCounter from "../hooks/useCounter";
 
 export default function Item() {
+  const [count, increment, decrement, reset] = useCounter();
+
   return (
     <div className="bottom-store-body">
       <div className="item-wrap">
@@ -18,11 +21,17 @@ export default function Item() {
           <h2 className="item-price">NGN 5,500.00</h2>
 
           <div className="counter">
-            <button>+</button>
-            <span className="count">0</span>
-            <button>-</button>
+            <button onClick={decrement}>-</button>
+            <span className="count">{count}</span>
+            {/* <input type="text" name="" id="" value={} className=""/> */}
+            <button onClick={increment}>+</button>
             <span>
-              <img className="reset" src="images/reset.png" alt="" />
+              <img
+                onClick={reset}
+                className="reset"
+                src="images/reset.png"
+                alt=""
+              />
             </span>
           </div>
         </div>

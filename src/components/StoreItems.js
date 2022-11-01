@@ -1,5 +1,10 @@
 import React from "react";
 import Item from "./Item";
+import data from "../data";
+
+const itemsMap = data.map((item) => {
+  return <Item key={item.id} item={item} />;
+});
 
 export default function StoreItems() {
   return (
@@ -16,9 +21,7 @@ export default function StoreItems() {
         </div>
       </div>
 
-      <div className="">
-        <Item />
-      </div>
+      <div className="bottom-store-body">{itemsMap}</div>
     </div>
   );
 }

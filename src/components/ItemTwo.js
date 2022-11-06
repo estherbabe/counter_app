@@ -1,8 +1,8 @@
 import React from "react";
-import useCounterTwo from "../hooks/useCounterTwo";
+import useCounter from "../hooks/useCounter";
 
-export default function Item(props) {
-  const [count, increment, decrement, reset, setValue] = useCounterTwo();
+export default function ItemTwo(props) {
+  const [count, increment, decrement, reset, setValue] = useCounter();
   if (count === 6) {
     throw new Error("Crashed!!!");
   }

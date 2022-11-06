@@ -4,6 +4,7 @@ const ACTIONS = {
   INCREMENT: "increment",
   DECREMENT: "decrement",
   RESET: "reset",
+  SETVALUE: "setvalue",
 };
 
 function reducer(state, action) {
@@ -14,6 +15,8 @@ function reducer(state, action) {
       return { count: state.count - 1 };
     case ACTIONS.RESET:
       return { count: 0 };
+    case ACTIONS.SETVALUE:
+      return { count: state.count + 5 };
     default:
       return state;
   }
@@ -35,7 +38,10 @@ function useCounter() {
     dispatch({ type: ACTIONS.RESET });
   };
 
-  return [count, increment, decrement, reset];
+  const setValue = () => {
+    dispatch({ type: ACTIONS.SETVALUE });
+  };
+  return [count, increment, decrement, reset, setValue];
 }
 
 export default useCounter;
